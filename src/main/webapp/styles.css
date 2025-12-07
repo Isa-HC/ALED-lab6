@@ -1,0 +1,32 @@
+@charset "UTF-8";
+* {
+	margin: 0; 
+	padding: 0;
+	background: grey;
+} 
+
+body {
+	font: 16px Georgia, serif;
+}
+
+header, nav, section { 
+	border: 1px solid #999; 
+	padding: 1%; 
+	margin-bottom: 1px; 
+} 
+
+header, header table, header td, header h1 {
+	background: #2dfa97;
+}
+
+footer { 
+	 text-align: center;
+}
+
+nav a{
+	margin: 0px 10px 0px 0px;
+}
+
+.margin-left{
+	margin-left: 10px;
+}
