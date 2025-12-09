@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Alta</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="alta.css">
 </head>
 <body>
-<!-- #1 -->
+
 	<header>
 		<table>
 			<thead>
@@ -21,13 +22,69 @@
 			</thead>
 		</table>
 	</header>
-	<!-- #2 -->
+	
 	<nav>
 		<a href="index.html">Inicio</a>
 		<a href="alta.html">Alta</a>
 		<a href="baja.html">Baja</a>
 		<a href="consulta.html">Consulta</a>
 	</nav>
-	alta
+	
+	<section> 
+		<h2>Alta</h2>
+	
+		<form name="formulario" onsubmit="return validar()">
+	
+		 	<label>Nombre:</label>
+     		<input type="text" name="nombre"> <br><br>
+	 
+	 		<label>Apellido:</label>
+     		<input type="text" name="apellido"><br><br>
+	
+	 		<label>DNI:</label>
+     		<input type="text" name="dni" id="dni"><br><br>
+     
+			<input type="submit" name="Submit"><br><br>
+	 
+			<script type="text/javascript">
+		 			function validar() {
+			   			var numero, letra, letras, formato;
+			    		letras = 'TRWAGMYFPDXBNJZSQVHLCKET';
+			    		formato = /^\d{8}[a-zA-Z]$/;
+			    		dni = document.forms["formulario"]["dni"].value;
+
+			    		if(formato.test(dni)){
+			        		numero = dni.substr(0, dni.length-1);
+			        		letra = dni.substr(dni.length-1, 1).toUpperCase();
+			        		numero = numero % 23;
+			        		letras = letras.substring(numero, numero+1);
+
+			        		if (letras != letra) {
+			            		alert("Letra errónea");
+			            		return false;
+			        		} else {
+			            		return true;
+			        		}
+			    		} else {
+			        		alert("Formato erróneo (debe ser 8 números y una letra)");
+			        		return false;
+			    		}
+					}
+	 			</script>
+			</form>
+	</section>
+	<footer> 
+		<p>Isabel Hernansáez Calín Enviar a: <a href="mailto:isabel.hcalin@alumnos.upm.es">isabel.hcalin@alumnos.upm.es</a></p>
+	</footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
