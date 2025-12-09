@@ -44,14 +44,14 @@
 	 		<label>DNI:</label>
      		<input type="text" name="dni" id="dni"><br><br>
      
-			<input type="submit" name="Submit"><br><br>
+			<input type="submit" name="Submit" id="Submit"><br><br>
 	 
 			<script type="text/javascript">
 		 			function validar() {
 			   			var numero, letra, letras, formato;
 			    		letras = 'TRWAGMYFPDXBNJZSQVHLCKET';
 			    		formato = /^\d{8}[a-zA-Z]$/;
-			    		dni = document.forms["formulario"]["dni"].value;
+			    		dni = document.forms["formulario"]["dnir"].value;
 
 			    		if(formato.test(dni)){
 			        		numero = dni.substr(0, dni.length-1);

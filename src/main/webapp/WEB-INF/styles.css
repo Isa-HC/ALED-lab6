@@ -17,7 +17,6 @@ header, nav, section {
 
 header, header table, header td, header h1 {
 	background: #AFF0E9;
-	
 }
 
 footer { 
@@ -26,9 +25,6 @@ footer {
 
 nav a{
 	margin: 0px 10px 0px 0px;
-	background: #014552;
-	color: #ffff;
-	
 }
 
 .margin-left{
@@ -44,4 +40,7 @@ input {
     margin-top: 10px;
 }
 
-
+nav, a {
+	background: #014552;
+	color: #ffff;
+}

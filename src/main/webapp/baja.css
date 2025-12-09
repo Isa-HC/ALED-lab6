@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+input {
+	background: #ffff
+	
+}
+
+#Submit {
+	background: #9EF0FF
+}
+
+section, h2, form, label {
+	background: #DFF5F3
+}
+
+nav, a {
+	background: #014552;
+	color: #ffff;
+}
+
+footer a {
+	background: #D1D1D1;
+	color: #0000EE;
+}
+
+header a href{
+	color: #ffff
+}
