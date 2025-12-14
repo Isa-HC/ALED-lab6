@@ -6,7 +6,7 @@ input {
 }
 
 #Submit {
-	background: #9EF0FF
+	background: #D1D1D1
 }
 
 section, h2, form, label {
@@ -25,4 +25,28 @@ footer a {
 
 header a href{
 	color: #ffff
+}
+
+.margin-top{
+	margin-top: 10px
+}
+
+select {
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    color: #333; /* Color del texto */
+    background-color: #f9f9f9; /* Fondo suave */
+    border: 1px solid #ccc; /* Borde claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    appearance: none; /* Elimina el diseño predeterminado del navegador */
+    background-repeat: no-repeat; /* No repetir imagen */
+    background-position: right 10px center; /* Posicionar la imagen a la derecha */
+    background-size: 12px; /* Tamaño de la flecha */
+    transition: border-color 0.3s; /* Transición suave al enfocar */
+}
+
+select:focus {
+    border-color: #4CAF50; /* Color de borde al enfocar */
+    outline: none; /* Sin contorno predeterminado */
 }

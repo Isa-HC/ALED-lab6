@@ -9,7 +9,7 @@ input {
 	background: #9EF0FF
 }
 
-section, h2, form, label {
+section, h2, form, label, header {
 	background: #DFF5F3
 }
 
@@ -25,4 +25,23 @@ footer a {
 
 header a href{
 	color: #ffff
+}
+
+input {
+color: #333; /* Color del texto */
+    background-color: #f9f9f9; /* Fondo suave */
+    border: 1px solid #ccc; /* Borde claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 3px; /* Espaciado interno */
+    width: 40%; /* Ancho completo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-size: 16px; /* Tamaño de fuente adecuado */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    margin-bottom: 7px;
+}
+
+input:focus {
+    border-color: #014552; /* Color de borde al enfocar */
+    box-shadow: 0 0 5px rgba(1, 69, 82, 0.5); /* Sombra al enfocar */
+    outline: none; /* Sin contorno predeterminado */
 }

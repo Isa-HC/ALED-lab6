@@ -2,23 +2,17 @@
 * {
 	margin: 0; 
 	padding: 0;
-	background: #D1D1D1;
 } 
 
 body {
-	font: 16px Georgia, serif;
+	font: 16px 'Arial', sans-serif;
+	background: #D1D1D1;
 }
 
 header, nav, section { 
 	border: 1px solid #999; 
 	padding: 1%; 
-	margin-bottom: 1px; 
 } 
-
-header, header table, header td, header h1 {
-	background: #AFF0E9;
-	
-}
 
 footer { 
 	 text-align: center;
@@ -43,5 +37,37 @@ input {
     display: block;
     margin-top: 10px;
 }
+
+td{
+	background: transparent !important;
+}
+
+.margin-bottom {
+	margin-bottom: 12px;
+}
+
+@media only screen and (max-width:800px){
+	header, 
+	footer {
+		display: none;		}
+}
+
+button {
+    display: inline-block; /* Permite al botón tener un tamaño como un bloque */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: transform 0.2s; /* Animación suave para la transformación */
+}
+
+button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño un 10% al pasar el ratón */
+}
+
 
 
